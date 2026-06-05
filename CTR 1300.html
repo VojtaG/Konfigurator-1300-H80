@@ -365,73 +365,6 @@ h4 {
 }
 
 
-
-/* ===== iPhone / mobilní opravy ===== */
-@media screen and (max-width: 768px) {
-
-    html, body {
-        width: 100%;
-        overflow-x: hidden !important;
-    }
-
-    .sub-tabs {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 6px;
-    }
-
-    .sub-tabs button {
-        margin-right: 0;
-        flex: 1 1 45%;
-        min-height: 44px;
-    }
-
-    .image-buttons-row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center !important;
-        gap: 6px;
-    }
-
-    .image-buttons-row button {
-        width: calc(50% - 6px) !important;
-        min-height: 44px;
-    }
-
-    .popup-overlay {
-        position: fixed !important;
-        top: 0 !important;
-        right: 0 !important;
-        left: 0 !important;
-        width: 100vw !important;
-        height: 100vh !important;
-        justify-content: center !important;
-        align-items: center !important;
-    }
-
-    .popup-box {
-        width: 95vw !important;
-        max-width: 95vw !important;
-        height: auto !important;
-        max-height: 85vh !important;
-        overflow-y: auto !important;
-    }
-
-    #printPdf,
-    #helpBtn {
-        position: relative !important;
-        top: auto !important;
-        right: auto !important;
-        margin: 5px;
-    }
-
-    .image-container {
-        margin-top: 15px !important;
-        min-height: 350px;
-    }
-}
-
 </style>
 </head>
 
@@ -604,6 +537,7 @@ h4 {
 
     <div class="sloupce-container">
     <div id="sloupce-tab1-row5" class="sloupce">0 0 0 0 0 0 0 0 0 0 0 0 0 0 </div>
+    
 </div>
     <!-- Čtvrtý samostatný řádek označení -->
 <div class="sloupce-container">
@@ -618,6 +552,7 @@ h4 {
 
     <div class="sub-tabs">
          <button class="sub-tab-button active" data-target="subtab3-content" data-i18n="subtab3_title">Nakladače a úhelníky</button>
+         <button class="sub-tab-button" data-target="subtab4-content"> Nakladače a úhelníky 2 </button>
         <button class="sub-tab-button " data-target="subtab1-content" data-i18n="subtab1_title">Pozice 1-12</button>
         <button class="sub-tab-button" data-target="subtab2-content" data-i18n="subtab2_title">Pozice 13-25</button>
        
@@ -835,16 +770,8 @@ h4 {
             <div data-i18n="poz5">6. Pozice</div>
             <div data-i18n="poz7">8. Pozice</div>
             <div data-i18n="poz9">9. Pozice</div>
-            <div data-i18n="poz12">13. Pozice</div>
-            <div data-i18n="poz14"> 15. Pozice</div>
-            <div data-i18n="poz14"> 17. Pozice</div>
-            <button class="Position-spacer2" style="width:10px;" disabled></button>
-            <div data-i18n="poz18">18. Pozice</div>
-            <div data-i18n="poz20">20. Pozice</div>
-            <div data-i18n="poz21">21. Pozice</div>
-            <div data-i18n="poz22">22. Pozice</div>
-            <div data-i18n="poz24">24. Pozice</div>
-            <div data-i18n="poz25">25. Pozice</div>
+       
+
      
         </div>
 
@@ -855,16 +782,7 @@ h4 {
     <button data-target="Uhelnik4"style="width:112px;" data-i18n="btn_uhl">Úhelník</button>
     <button data-target="Uhelnik5"style="width:112px;" data-i18n="btn_uhl">Úhelník</button>
     <button data-target="Uhelnik6"style="width:112px;" data-i18n="btn_uhl">Úhelník</button>
-    <button data-target="Uhelnik7"style="width:112px;" data-i18n="btn_uhl">Úhelník</button>
-    <button class="Position-spacer" style="width:112px;" disabled></button>
-    <button data-target="Uhelnik8"style="width:112px;" data-i18n="btn_uhl">Úhelník</button>
-    <button class="Position-spacer2" style="width:10px;" disabled></button>
-    <button data-target="Uhelnik9"style="width:112px;" data-i18n="btn_uhl">Úhelník</button>
-    <button data-target="Uhelnik10"style="width:112px;" data-i18n="btn_uhl">Úhelník</button>
-    <button data-target="Uhelnik11"style="width:112px;" data-i18n="btn_uhl">Úhelník</button>
-    <button data-target="Uhelnik12"style="width:112px;" data-i18n="btn_uhl">Úhelník</button>
-    <button data-target="Uhelnik13"style="width:112px;" data-i18n="btn_uhl">Úhelník</button>
-    <button data-target="Uhelnik14"style="width:112px;" data-i18n="btn_uhl">Úhelník</button>
+   
 
     
 </div>
@@ -880,20 +798,7 @@ h4 {
             <button data-target="Ram" style="width:112px;" data-group="colx2" data-value="0"data-i18n="btn_praz">Prázdná pozice</button>
            <button class="Position-spacer" style="width:112px;" disabled></button>
             <button data-target="Ram" style="width:112px;" data-group="colx3" data-value="0"data-i18n="btn_praz">Prázdná pozice</button>
-            <button data-target="Ram" style="width:112px;" data-group="colx4" data-value="0"data-i18n="btn_praz">Prázdná pozice</button>
-            <button data-target="Ram" style="width:112px;" data-group="colx5" data-value="0"data-i18n="btn_praz">Prázdná pozice</button>
-           <button class="Position-spacer" style="width:112px;" disabled></button>
-            <button class="Position-spacer2" style="width:10px;" disabled></button>
-             <button class="Position-spacer2" style="width:56px;" disabled></button>
-            <button data-target="Ram" style="width:112px;" data-group="colx6" data-value="0"data-i18n="btn_praz">Prázdná pozice</button>
-            <button class="Position-spacer2" style="width:56px;" disabled></button>
-            <!-- <button class="Position-spacer2" style="width:10px;" disabled></button> -->
-           <button class="Position-spacer" style="width:112px;" disabled></button>
-              <!-- <button class="Position-spacer2" style="width:48px;" disabled></button> -->
-            <button data-target="Ram" style="width:112px;" data-group="colx7" data-value="0"data-i18n="btn_praz">Prázdná pozice</button>
-            <button class="Position-spacer" style="width:112px;" disabled></button>
-            <button class="Position-spacer" style="width:112px;" disabled></button>
-            
+          
             
 
 
@@ -909,18 +814,7 @@ h4 {
             <button data-target="Nakladac3" style="width:112px;" data-group="colx2" data-value="1" data-i18n="btn_nakl">Nakladač</button>
             <button class="Position-spacer" style="width:112px;" disabled></button>
             <button data-target="Nakladac4" style="width:112px;" data-group="colx3" data-value="1" data-i18n="btn_nakl">Nakladač</button>
-            <button data-target="Nakladac5" style="width:112px;" data-group="colx4" data-value="1" data-i18n="btn_nakl">Nakladač</button>
-            <button data-target="Nakladac6" style="width:112px;" data-group="colx5" data-value="1" data-i18n="btn_nakl">Nakladač</button>
-            <button class="Position-spacer" style="width:112px;" disabled></button>
-            <button class="Position-spacer2" style="width:10px;" disabled></button>
-            <button class="Position-spacer2" style="width:56px;" disabled></button>
-            <button data-target="Nakladac7" style="width:112px;" data-group="colx6" data-value="1" data-i18n="btn_nakl">Nakladač</button>
-             <button class="Position-spacer2" style="width:56px;" disabled></button>
-             <button class="Position-spacer" style="width:112px;" disabled></button>
-             
-            <button data-target="Nakladac9" style="width:112px;" data-group="colx7" data-value="1" data-i18n="btn_nakl">Nakladač</button>
-             <button class="Position-spacer" style="width:112px;" disabled></button>
-            <button class="Position-spacer" style="width:112px;" disabled></button>
+            
        </div> 
 
         
@@ -959,7 +853,100 @@ h4 {
             <button class="Position-spacer" style="width:112px;" disabled></button>
             <button class="Position-spacer" style="width:112px;" disabled></button>
             <button class="Position-spacer2" style="width:10px;" disabled></button>
+
+
+
+
+
+
+
+
+
+
+
+            <!-- <button data-target="Nakladac8" style="width:112px;" data-group="colx6" data-value="2" data-i18n="btn_nakl">Nakladač</button> -->
+            
+            
+        
+
+                  </div>
+</div>
+        <div id="subtab4-content" class="sub-tab-content">
+
+    <div class="Positions-header">
+            <div data-i18n="poz12">13. Pozice</div>
+            <div data-i18n="poz14"> 15. Pozice</div>
+            <div data-i18n="poz14"> 17. Pozice</div>
+            <button class="Position-spacer2" style="width:10px;" disabled></button>
+            <div data-i18n="poz18">18. Pozice</div>
+            <div data-i18n="poz20">20. Pozice</div>
+            <div data-i18n="poz21">21. Pozice</div>
+            <div data-i18n="poz22">22. Pozice</div>
+            <div data-i18n="poz24">24. Pozice</div>
+            <div data-i18n="poz25">25. Pozice</div>
+    </div>
+
+<div class="image-buttons-row independent-row" data-sloupce="sloupce-tab1-row5">
+
+   
+    <button data-target="Uhelnik7"style="width:112px;" data-i18n="btn_uhl">Úhelník</button>
+    <button class="Position-spacer" style="width:112px;" disabled></button>
+    <button data-target="Uhelnik8"style="width:112px;" data-i18n="btn_uhl">Úhelník</button>
+    <button class="Position-spacer2" style="width:10px;" disabled></button>
+    <button data-target="Uhelnik9"style="width:112px;" data-i18n="btn_uhl">Úhelník</button>
+    <button data-target="Uhelnik10"style="width:112px;" data-i18n="btn_uhl">Úhelník</button>
+    <button data-target="Uhelnik11"style="width:112px;" data-i18n="btn_uhl">Úhelník</button>
+    <button data-target="Uhelnik12"style="width:112px;" data-i18n="btn_uhl">Úhelník</button>
+    <button data-target="Uhelnik13"style="width:112px;" data-i18n="btn_uhl">Úhelník</button>
+    <button data-target="Uhelnik14"style="width:112px;" data-i18n="btn_uhl">Úhelník</button>
+
+    </div>
+
+    <!-- MEZERA POD STANDARDNÍMI ŘÁDKY -->
+<div style="height:30px;"></div>
+
+         <div class="image-buttons-row" data-sloupce="sloupce-tab1-row4">
+            <button data-target="Ram" style="width:112px;" data-group="colx4" data-value="0"data-i18n="btn_praz">Prázdná pozice</button>
+            <button data-target="Ram" style="width:112px;" data-group="colx5" data-value="0"data-i18n="btn_praz">Prázdná pozice</button>
+           <button class="Position-spacer" style="width:112px;" disabled></button>
+            <button class="Position-spacer2" style="width:10px;" disabled></button>
+             <button class="Position-spacer2" style="width:48px;" disabled></button>
+            <button data-target="Ram" style="width:112px;" data-group="colx6" data-value="0"data-i18n="btn_praz">Prázdná pozice</button>
             <button class="Position-spacer2" style="width:56px;" disabled></button>
+            <!-- <button class="Position-spacer2" style="width:10px;" disabled></button> -->
+           <button class="Position-spacer" style="width:112px;" disabled></button>
+              <!-- <button class="Position-spacer2" style="width:48px;" disabled></button> -->
+            <button data-target="Ram" style="width:112px;" data-group="colx7" data-value="0"data-i18n="btn_praz">Prázdná pozice</button>
+            <button class="Position-spacer" style="width:112px;" disabled></button>
+            <button class="Position-spacer" style="width:112px;" disabled></button>
+            
+
+        </div>
+    <div class="image-buttons-row"  data-sloupce="sloupce-tab1-row4">
+      
+            <button data-target="Nakladac5" style="width:112px;" data-group="colx4" data-value="1" data-i18n="btn_nakl">Nakladač</button>
+            <button data-target="Nakladac6" style="width:112px;" data-group="colx5" data-value="1" data-i18n="btn_nakl">Nakladač</button>
+            <button class="Position-spacer" style="width:112px;" disabled></button>
+            <button class="Position-spacer2" style="width:10px;" disabled></button>
+            <button class="Position-spacer2" style="width:48px;" disabled></button>
+            <button data-target="Nakladac7" style="width:112px;" data-group="colx6" data-value="1" data-i18n="btn_nakl">Nakladač</button>
+             <button class="Position-spacer2" style="width:56px;" disabled></button>
+             <button class="Position-spacer" style="width:112px;" disabled></button>
+             
+            <button data-target="Nakladac9" style="width:112px;" data-group="colx7" data-value="1" data-i18n="btn_nakl">Nakladač</button>
+             <button class="Position-spacer" style="width:112px;" disabled></button>
+            <button class="Position-spacer" style="width:112px;" disabled></button>
+       </div> 
+
+
+<div class="image-buttons-row"  data-sloupce="sloupce-tab1-row4">
+
+       
+           <button class="Position-spacer" style="width:112px;" disabled></button>
+            <button class="Position-spacer" style="width:112px;" disabled></button>
+            <button class="Position-spacer" style="width:112px;" disabled></button>
+            <button class="Position-spacer2" style="width:10px;" disabled></button>
+            <button class="Position-spacer2" style="width:48px;" disabled></button>
             <button data-target="Nakladac8" style="width:112px;" data-group="colx6" data-value="2" data-i18n="btn_nakl">Nakladač</button>
              <button class="Position-spacer2" style="width:56px;" disabled></button>
              <button class="Position-spacer" style="width:112px;" disabled></button>
@@ -985,6 +972,9 @@ h4 {
                   </div>
 
 
+</div>
+
+
 
 
 
@@ -995,7 +985,7 @@ h4 {
 <!-- <div style="height:20px;"></div> -->
 
 
-    </div>
+    
 </div>
 <h4 data-i18n="main_title" style="margin-bottom:10px; margin-top:380px; margin-left:0px">Vypracoval Ing. V.G.</h4> 
 
